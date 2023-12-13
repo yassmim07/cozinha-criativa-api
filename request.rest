@@ -1,0 +1,124 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "Sophia", 
+    "email": "sophia@teste.com",
+    "senha": "12345",
+    "telefone": "11994365569",
+    "usuario": "sophis",
+    "sobre": "n sei n sei n sei "
+    
+}
+
+###
+
+GET http://localhost:3000/api/users
+
+
+###
+
+GET http://localhost:3000/api/users/6577487142e05d66272113e6
+
+###
+
+DELETE http://localhost:3000/api/users/6577487142e05d66272113e6
+
+###
+
+PUT http://localhost:3000/api/users/6579229d0d728b9a02552b01
+Content-Type: application/json
+
+{
+    "name": "Sophia", 
+    "email": "sophia@teste.com",
+    "senha": "12345",
+    "telefone": "11994365569",
+    "usuario": "sophizada",
+    "sobre": "n sei n sei n sei "
+    
+}
+
+###
+
+POST http://localhost:3000/api/receitas
+Content-Type: application/json
+
+{
+    "nome_receita": "Macarrão com Queijo",
+    "apresentacao": "Uma deliciosa receita de Macarrão com Queijo",
+    "tempo_preparo": [
+        {
+            "horas_receita": 1,
+            "minutos": 30
+        }
+    ],
+    "ingredientes": [
+        {
+            "quantidade": 200,
+            "unidade": "g",
+            "descricao": "Macarrão"
+        },
+        {
+            "quantidade": 150,
+            "unidade": "g",
+            "descricao": "Queijo"
+        }
+    ],
+    "modo_de_preparo": [
+        {
+            "passo": "Cozinhe o macarrão conforme as instruções da embalagem."
+        },
+        {
+            "passo": "Misture o queijo no macarrão cozido."
+        }
+    ],
+    "imagem": ""
+}
+
+
+###
+GET http://localhost:3000/api/receitas
+
+###
+GET http://localhost:3000/api/receitas/6574ffe3b67439064cb43425
+
+### 
+DELETE http://localhost:3000/api/receitas/6574ffe3b67439064cb43425
+
+###
+PUT http://localhost:3000/api/receitas/6577cb6c871858c11e2e331b
+Content-Type: application/json
+
+{
+    "nome_receita": "Macarrão com Frango",
+    "apresentacao": "Uma deliciosa receita de Macarrão com Frango",
+    "tempo_preparo": [
+        {
+            "horas_receita": 1,
+            "minutos": 30
+        }
+    ],
+    "ingredientes": [
+        {
+            "quantidade": 200,
+            "unidade": "g",
+            "descricao": "Macarrão"
+        },
+        {
+            "quantidade": 150,
+            "unidade": "g",
+            "descricao": "Frango"
+        }
+    ],
+    "modo_de_preparo": [
+        {
+            "passo": "Cozinhe o macarrão conforme as instruções da embalagem."
+        },
+        {
+            "passo": "Misture o frango no macarrão cozido."
+        }
+    ],
+    "imagem": "", 
+    "categoria": "Refeição"
+}
