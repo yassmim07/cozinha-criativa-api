@@ -2,7 +2,7 @@
 
 
 # Visão Geral ⭐
-A API Cozinha Criativa oferece funcionalidades de CRUD para cadastro, login e gerenciamento de receitas. Os usuários podem adicionar e salvar suas receitas favoritas, com sua respectiva descrição e ingredientes.
+A API Cozinha Criativa oferece funcionalidades de CRUD para cadastro, login e gerenciamento de receitas. Você pode adicionar e salvar suas receitas favoritas, com suas respectivas descrições e ingredientes.
 
 ## Contexto de sua criação
 Projeto desenvolvido em conjunto com Karol Silvano, no contexto da disciplina Programação Web Front-End, do curso técnico em Desenvolvimento de Sistemas – Senai Suiço-Brasileira.
@@ -14,7 +14,7 @@ Esta versão é mantida por mim para fins de estudo, evolução do código e por
 - Versão 18 ou superior do Node.js.
 
 # Como rodar o projeto localmente 💻
-- Com o link da conexão com o banco criado, crie o arquivo .env e siga este exemplo:
+- Com o banco de dados criado e tendo o link de sua conexão, crie o arquivo .env e siga este exemplo:
 
 ```
 MONGODB_URI=mongodb+srv://<user>:<password>@<cluster>/<database>
