@@ -1,0 +1,163 @@
+## OBS: Não é garantido que os ids mostrados nos exemplos estejam no banco ainda, considere seguir o passo e passo junto com os exemplos e testar na prática. 
+## ADICIONANDO RECEITAS
+## Caso queira adicionar uma receita, basta preencher os campos e apertar em Send Request.
+POST http://localhost:3000/api/receitas
+Content-Type: application/json
+
+{
+    "nome_receita": " ",
+    "apresentacao": " ",
+    "tempo_preparo": [
+        {
+            "horas_receita": 0,
+            "minutos": 0
+        }
+    ],
+    "ingredientes": [
+        {
+            "descricao": " "
+        },
+        {
+            "descricao": " "
+        }
+    ],
+    "modo_de_preparo": [
+        {
+            "passo": " "
+        },
+        {
+            "passo": " "
+        }
+    ],
+    "imagem": "", 
+    "categoria": " "
+}
+
+### 
+
+## Exemplo 
+POST http://localhost:3000/api/receitas
+Content-Type: application/json
+
+{
+    "nome_receita": "Macarrão com Queijo",
+    "apresentacao": "Um passo a passo de como fazer uma receita deliciosa de macarrão com queijo",
+    "tempo_preparo": [
+        {
+            "horas_receita": 1,
+            "minutos": 30
+        }
+    ],
+    "ingredientes": [
+        {
+            "descricao": "Macarrão (de sua preferência)"
+        },
+        {
+            "descricao": "Queijo"
+        }
+    ],
+    "modo_de_preparo": [
+        {
+            "passo": "Cozinhe o macarrão conforme as instruções na embalagem."
+        },
+        {
+            "passo": "Coloque o queijo"
+        }
+    ],
+    "imagem": "", 
+    "categoria": "Refeição"
+}
+
+
+
+
+###
+
+## CONSULTANDO RECEITA 
+
+## Para consultar ou excluir uma receita, você precisa ter o id dela. Dê um Send Request no GET abaixo, ache a receita que deseja consultar ou excluir e copie
+## o id dela, que está acima do campo nome_receita
+GET http://localhost:3000/api/receitas
+Content-Type: application/json
+
+
+###
+## Após copiar o id, cole-o após o receitas/, que nem consta no exemplo abaixo.
+GET http://localhost:3000/api/receitas/657b32cd9f855de213412586
+
+
+###
+## Tente :)
+GET http://localhost:3000/api/receitas/
+
+
+
+
+###
+
+## ATUALIZANDO UMA RECEITA
+
+## Cole o id da receita que deseja alterar, após o receitas/, e mude os dados que preferir utilizando o mesmo modelo usado para a criação da receita. 
+## Obs: se o id colocado nesse exemplo abaixo for o mesmo da receita criada no exemplo da linha 36, os dados da receita serão atualizados para essa nova versão, tente testar ;)
+## Caso deseje mudar outra receita em específico..
+## Basta ir no get e achar o id da receita que deseja alterar, para maior praticidade, copie as informações de lá e copie aqui, abaixo da linha 144. 
+## Certifique-se de excluir as linhas que contém informações fora do escopo mostrado abaixo, como ids, createdAt etc. 
+
+PUT http://localhost:3000/api/receitas/697acdba26d5d52a663fa415
+Content-Type: application/json
+
+{
+    "nome_receita": "Macarrão com Frango e Queijo",
+    "apresentacao": "Uma deliciosa receita de Macarrão com Frango e Queijo",
+    "tempo_preparo": [
+        {
+            "horas_receita": 1,
+            "minutos": 30
+        }
+    ],
+    "ingredientes": [
+        {
+            "descricao": "Macarrão"
+        },
+        {
+            "descricao": "Frango"
+        },
+        {
+            "descricao": "Queijo"
+        }
+    ],
+    "modo_de_preparo": [
+        {
+            "passo": "Cozinhe o macarrão conforme as instruções da embalagem."
+        },
+        {
+            "passo": "Misture o frango e o queijo no macarrão cozido."
+        }
+    ],
+    "imagem": "", 
+    "categoria": "Refeição"
+}
+
+
+###
+PUT http://localhost:3000/api/receitas/
+Content-Type: application/json
+
+
+
+
+### 
+
+## DELETANDO UMA RECEITA
+## Cole o id da receita que deseja excluir após o receitas/, como consta no exemplo abaixo.
+DELETE http://localhost:3000/api/receitas/6574ffe3b67439064cb43425
+
+
+###
+## Tente :)
+DELETE http://localhost:3000/api/receitas/
+
+###
+## Att, 
+## Yasmim. 
+
