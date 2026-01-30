@@ -1,4 +1,4 @@
-## OBS: Não é garantido que os ids mostrados nos exemplos estejam no banco ainda, considere seguir o passo e passo junto com os exemplos e testar na prática. 
+## OBS: Os ids usados nos exemplos são ilustrativos, portanto testes de requisições não funcionam com eles. Considere seguir o passo e passo junto com os exemplos e testar na prática. 
 ## ADICIONANDO RECEITAS
 ## Caso queira adicionar uma receita, basta preencher os campos e apertar em Send Request.
 POST http://localhost:3000/api/receitas
@@ -98,7 +98,7 @@ GET http://localhost:3000/api/receitas/
 ## ATUALIZANDO UMA RECEITA
 
 ## Cole o id da receita que deseja alterar, após o receitas/, e mude os dados que preferir utilizando o mesmo modelo usado para a criação da receita. 
-## Obs: se o id colocado nesse exemplo abaixo for o mesmo da receita criada no exemplo da linha 36, os dados da receita serão atualizados para essa nova versão, tente testar ;)
+## Obs: se o id colocado nesse exemplo abaixo for o mesmo da receita criada no exemplo da linha 38, os dados da receita serão atualizados para essa nova versão, tente testar ;)
 ## Caso deseje mudar outra receita em específico..
 ## Basta ir no get e achar o id da receita que deseja alterar, para maior praticidade, copie as informações de lá e copie aqui, abaixo da linha 144. 
 ## Certifique-se de excluir as linhas que contém informações fora do escopo mostrado abaixo, como ids, createdAt etc. 
@@ -160,4 +160,5 @@ DELETE http://localhost:3000/api/receitas/
 ###
 ## Att, 
 ## Yasmim. 
+
 
