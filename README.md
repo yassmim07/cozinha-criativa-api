@@ -10,7 +10,7 @@ Esta versão é mantida por mim para fins de estudo, evolução do código e por
 
 # Requisitos para rodar o projeto 📃 
 - Criar um banco de dados no MongoDB Atlas. Caso não saiba, recomendo assistir a este
-<a href="https://www.youtube.com/watch?v=BA3QM6Sy1S8&list=PLR8JXremim5BaPqraGKBPS4rFhywgUAvz&index=6">vídeo</a>.
+<a href="https://www.youtube.com/watch?v=BA3QM6Sy1S8">vídeo</a>.
 - Versão 18 ou superior do Node.js.
 
 # Como rodar o projeto localmente 💻
